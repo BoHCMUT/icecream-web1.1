@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - Icecream</title>
+    <meta name="description" content="Checkout securely at Growcery.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================================== HEADER ========================================================================== -->
+    <header class="site-header">
+        <div class="header-main">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <a href="index.html" class="logo"><span class="logo-white">Ice</span><span
+                        class="logo-accent">cream</span></a>
+
+                <div class="header-search flex-grow-1 mx-lg-4 d-none d-lg-flex">
+                    <form class="d-flex w-100" role="search">
+                        <select class="form-select flex-shrink-0" aria-label="All categories">
+                            <option selected>Các Loại Kem</option>
+                            <option>Kem Hộp</option>
+                            <option>Kem Viên</option>
+                            <option>Kem Que</option>
+                            <option>Kem Ốc Quế</option>
+                            <option>Kem Trái Cây</option>
+                            <option>Bánh Kem Lạnh</option>
+                            <option>Topping</option>
+                        </select>
+                        <input class="form-control" type="search" placeholder="Tìm kiếm với hơn 3.600 sản phẩm"
+                            aria-label="Search">
+                        <button class="btn-search" type="submit">Tìm</button>
+                    </form>
+                </div>
+
+                <div class="d-flex align-items-center header-icons">
+                    <a href="login.html" class="icon-link" title="Account"><i class="bi bi-person"></i></a>
+                    <a href="wishlist.html" class="icon-link" title="Wishlist"><i class="bi bi-bookmark"></i><span
+                            class="icon-badge">2</span></a>
+                    <a href="cart.html" class="icon-link" title="Cart"><i class="bi bi-basket3"></i><span
+                            class="icon-badge">3</span></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-nav navbar navbar-expand-lg py-0">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM HỘP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM VIÊN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM QUE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM ỐC QUẾ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM TRÁI CÂY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">BÁNH KEM LẠNH</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">TOPPING</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">TRANG</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Cửa hàng</a></li>
+                                <li><a class="dropdown-item" href="product-details.html">Chi tiết sản phẩm</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Giỏ hàng</a></li>
+                                <li><a class="dropdown-item active-page" href="checkout.html">Thanh Toán</a></li>
+                                <li><a class="dropdown-item" href="wishlist.html">Yêu Thích</a></li>
+                                <li><a class="dropdown-item" href="login.html">Đăng nhập / Đăng ký</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Về chúng tôi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header-banner">
+        <div class="page-header-decor"></div>
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <h1>Thanh toán</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="shop.html">Trang</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section-py">
+        <div class="container">
+
+            <div class="notice-box">Khách hàng quay lại? <a href="login.html">Nhấn vào đây để đăng nhập</a></div>
+            <div class="notice-box">Có mã giảm giá? <a href="#" data-bs-toggle="collapse"
+                    data-bs-target="#couponBox">Nhấn vào đây để nhập mã của bạn</a>
+                <div class="collapse mt-3" id="couponBox">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <input type="text" class="form-control" placeholder="Mã giãm giá" style="max-width:220px;">
+                        <button class="btn btn-dark-soft">Áp dụng mã giảm giá</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt-2">
+                <div class="col-lg-7 checkout-form">
+                    <h4 class="mb-4">Chi tiết thanh toán</h4>
+                    <form class="row needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label>Tên *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Họ *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-12">
+                            <label>Tên công ty (optional)</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label>Quốc gia / Khu vực *</label>
+                            <select class="form-select" required>
+                                <option selected>Việt Nam</option>
+                                <option>United States (US)</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label>Địa chỉ đường phố *</label>
+                            <input type="text" class="form-control mb-2" placeholder="Số nhà và tên đường" required>
+                            <input type="text" class="form-control" placeholder="Căn hộ, suite, v.v. (tùy chọn)">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Thị trấn / Thành phố *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Bang *</label>
+                            <select class="form-select" required>
+                                <option selected>Không</option>
+                                <option>Florida</option>
+                                <option>California</option>
+                                <option>Texas</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Mã ZIP *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Số điện thoại *</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="col-12">
+                            <label>Địa chỉ Email *</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="createAccount">
+                                <label class="form-check-label" for="createAccount">Tạo tài khoản?</label>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <label>Ghi chú đặt hàng</label>
+                            <textarea class="form-control" rows="4"
+                                placeholder="Ghi chú về đơn hàng của bạn, ví dụ như ghi chú đặc biệt về giao hàng"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="order-review">
+                        <h4 class="mb-4">Đơn hàng của bạn</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th class="text-end">Tổng phụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Kem Matcha &times; 2</td>
+                                    <td class="text-end">18.000 VND</td>
+                                </tr>
+                                <tr>
+                                    <td>Kem mochi &times; 1</td>
+                                    <td class="text-end">10.000 VND</td>
+                                </tr>
+                                <tr>
+                                    <td>Kem Chocolate &times; 3</td>
+                                    <td class="text-end">12.000 VND</td>
+                                </tr>
+                                <tr>
+                                    <th>Tổng phụ</th>
+                                    <th class="text-end">82.000 VND</th>
+                                </tr>
+                                <tr>
+                                    <th>Shipping</th>
+                                    <td class="text-end">Free delivery</td>
+                                </tr>
+                                <tr>
+                                    <th class="fs-5">Tổng</th>
+                                    <th class="text-end fs-5 text-orange">82.000 VND</th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="payBank" checked>
+                            <label class="form-check-label" for="payBank">
+                                <strong>Chuyển khoản ngân hàng trực tiếp</strong>
+                                <small>Thanh toán trực tiếp vào tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng Mã
+                                    Đơn Hàng của bạn làm Tham chiếu thanh toán. Đơn hàng của bạn sẽ được gửi đi khi tiền
+                                    đã được thanh toán.</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="payCheck">
+                            <label class="form-check-label" for="payCheck"><strong>Kiểm tra thanh toán</strong></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="payCod">
+                            <label class="form-check-label" for="payCod"><strong>Thanh toán khi nhận
+                                    hàng</strong></label>
+                        </div>
+                        <div class="form-check" style="border-bottom:none;">
+                            <input class="form-check-input" type="radio" name="payment" id="payPaypal">
+                            <label class="form-check-label" for="payPaypal"><strong>PayPal</strong></label>
+                        </div>
+
+                        <button class="btn btn-orange w-100 mt-4">Đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="subscribe-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <img src="assets/img/illustrations/newsletter-dino.png" alt="Subscribe"
+                            style="max-width:100%;max-height:220px;">
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Nhận Khuyến Mãi 20% Khi Thanh Toán Lần Đầu Tiên</h3>
+                        <p>Đăng ký &amp; Đăng nhập ngay để làm thành viên.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <form class="subscribe-form">
+                            <input type="email" class="form-control" placeholder="Địa chỉ Email" required>
+                            <button type="submit" class="btn btn-green">Đăng ký ngay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo"><i class=""></i><span class="fl-green">Cà</span><span
+                            class="fl-orange">Lem</span></a>
+                    <p class="footer-about">Thưởng thức vị kem thơm ngon mát lạnh ngay tại nhà — chuẩn vị tự nhiên, trọn
+                        vẹn từng
+                        khoảnh khắc ngọt ngào."</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Liên Kết Nhanh</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="contact.html">Về chúng tôi</a></li>
+                        <li><a href="shop.html">Khuyến mãi</a></li>
+                        <li><a href="shop.html">Dịch vụ</a></li>
+                        <li><a href="contact.html">Thông tin liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Về Chúng Tôi</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="contact.html">Quy trình đặt hàng</a></li>
+                        <li><a href="shop.html">Set quà tặng</a></li>
+                        <li><a href="shop.html">Chương trình ưu đãi</a></li>
+                        <li><a href="contact.html">Giới thiệu bạn bè</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Trung Tâm Hỗ Trợ</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="checkout.html">Phương thức thanh toán</a></li>
+                        <li><a href="checkout.html">Chính sách giao hàng</a></li>
+                        <li><a href="shop.html">Chính sách đổi trả</a></li>
+                        <li><a href="contact.html">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 footer-newsletter">
+                    <h6 class="footer-heading">Nhận bản tin ưu đãi</h6>
+                    <p>Đăng ký để cập nhật những ưu đãi hấp dẫn và vị kem mới nhất</p>
+                    <form class="input-group">
+                        <input type="email" class="form-control" placeholder="Nhập Email">
+                        <button class="btn" type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+                <span>&copy; 2026 Cà Lem. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

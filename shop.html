@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng - Icecream</title>
+    <meta name="description" content="Browse fresh organic groceries at Growcery.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================================================== HEADER ========================================================================== -->
+    <header class="site-header">
+        <div class="header-main">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <a href="index.html" class="logo"><span class="logo-white">Ice</span><span
+                        class="logo-accent">cream</span></a>
+
+                <div class="header-search flex-grow-1 mx-lg-4 d-none d-lg-flex">
+                    <form class="d-flex w-100" role="search">
+                        <select class="form-select flex-shrink-0" aria-label="All categories">
+                            <option selected>Các Loại Kem</option>
+                            <option>Kem Hộp</option>
+                            <option>Kem Viên</option>
+                            <option>Kem Que</option>
+                            <option>Kem Ốc Quế</option>
+                            <option>Kem Trái Cây</option>
+                            <option>Bánh Kem Lạnh</option>
+                            <option>Topping</option>
+                        </select>
+                        <input class="form-control" type="search" placeholder="Tìm kiếm với hơn 3.600 sản phẩm"
+                            aria-label="Search">
+                        <button class="btn-search" type="submit">Tìm</button>
+                    </form>
+                </div>
+
+                <div class="d-flex align-items-center header-icons">
+                    <a href="login.html" class="icon-link" title="Account"><i class="bi bi-person"></i></a>
+                    <a href="wishlist.html" class="icon-link" title="Wishlist"><i class="bi bi-bookmark"></i><span
+                            class="icon-badge">2</span></a>
+                    <a href="cart.html" class="icon-link" title="Cart"><i class="bi bi-basket3"></i><span
+                            class="icon-badge">3</span></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-nav navbar navbar-expand-lg py-0">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM HỘP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM VIÊN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM QUE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM ỐC QUẾ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">KEM TRÁI CÂY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">BÁNH KEM LẠNH</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">TOPPING</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">TRANG</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-page" href="shop.html">Cửa hàng</a></li>
+                                <li><a class="dropdown-item" href="product-details.html">Chi tiết sản phẩm</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Giỏ hàng</a></li>
+                                <li><a class="dropdown-item" href="checkout.html">Thanh Toán</a></li>
+                                <li><a class="dropdown-item" href="wishlist.html">Yêu Thích</a></li>
+                                <li><a class="dropdown-item" href="login.html"> Đăng nhập / Đăng ký</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Về chúng tôi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page header -->
+    <section class="page-header-banner">
+        <div class="page-header-decor"></div>
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <h1>Cửa hàng</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="shop.html">Trang</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cửa hàng</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Shop content -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+
+                <!-- Sidebar -->
+                <aside class="col-lg-3 order-2 order-lg-1">
+                    <div class="widget widget-search">
+                        <form class="input-group">
+                            <input type="search" class="form-control" placeholder="Tìm sản phẩm">
+                            <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="widget">
+                        <h5 class="widget-title">Danh mục</h5>
+                        <ul class="list-unstyled widget-list">
+                            <li><a href="shop.html" class="active-link">Tất cả <span class="count">(248)</span></a></li>
+                            <li><a href="shop.html">Kem hộp <span class="count">(64)</span></a></li>
+                            <li><a href="shop.html">Kem viên <span class="count">(28)</span></a></li>
+                            <li><a href="shop.html">Kem que <span class="count">(52)</span></a></li>
+                            <li><a href="shop.html">Kem ốc quế <span class="count">(37)</span></a></li>
+                            <li><a href="shop.html">Kem trái cây <span class="count">(19)</span></a></li>
+                            <li><a href="shop.html">Bánh kem lạnh <span class="count">(23)</span></a></li>
+                            <li><a href="shop.html">Topping <span class="count">(25)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <h5 class="widget-title">Lọc theo giá</h5>
+                        <input type="range" class="form-range" min="0" max="100" value="65" id="priceRange">
+                        <div class="price-range-values">
+                            <span>0 VND</span>
+                            <span>65.000 VND</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product grid -->
+                <div class="col-lg-9 order-1 order-lg-2">
+
+                    <div class="shop-toolbar">
+                        <span>Hiển thị 1–16 trong tổng số 248 kết quả</span>
+                        <select class="form-select">
+                            <option>Sắp xếp theo độ phổ biến</option>
+                            <option>Sắp xếp theo giá: thấp đến cao</option>
+                            <option>Sắp xếp theo giá: cao đến thấp</option>
+                            <option>Sắp xếp theo mới nhất</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <!-- Product 1 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/mochi.png"
+                                            alt="Fresh Strawberries"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <a href="product-details.html" class="product-title">Kem mochi</a>
+                                <div class="product-price"><span class="new">10.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/chien.png"
+                                            alt="Bok Choy"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Chiên</a>
+                                <div class="product-price"><span class="new">15.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/ga_ran.png"
+                                            alt="Red Radish"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Gà Rán</nav></a>
+                                <div class="product-price"><span class="new">13.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/dua.png"
+                                            alt="Red Chili"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Dừa</a>
+                                <div class="product-price"><span class="new">20.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 5 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/vanilla.png"
+                                            alt="Fresh Garlic"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Vanilla</a>
+                                <div class="product-price"><span class="new">10.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 6 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/chocolate.png"
+                                            alt="Brown Onion"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Chocolate</a>
+                                <div class="product-price"><span class="new">10.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 7 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/matcha.png"
+                                            alt="Watermelon"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Matcha</a>
+                                <div class="product-price"><span class="new">15.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 8 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/caramel.png"
+                                            alt="Bell Peppers"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Caramel</a>
+                                <div class="product-price"><span class="new">20.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 9 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/chuoi.png"
+                                            alt="Green Grapes"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Chuối</a>
+                                <div class="product-price"><span class="new">20.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 10 -->
+                        <div class="col-6 col-md-4 product-col">
+                            <div class="product-card">
+                                <div class="product-thumb">
+                                    <a href="product-details.html"><img src="assets/img/products/mango.png"
+                                            alt="Vine Tomatoes"></a>
+                                    <div class="product-actions">
+                                        <button class="btn-icon"><i class="bi bi-heart"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-eye"></i></button>
+                                        <button class="btn-icon"><i class="bi bi-basket3"></i></button>
+                                    </div>
+                                </div>
+                                <a href="product-details.html" class="product-title">Kem Mango</a>
+                                <div class="product-price"><span class="new">20.000 VND</span>
+                                </div>
+                                <div class="product-rating"><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (221)</div>
+                            </div>
+                        </div>
+                        <!-- Product 11 -->
+
+                        <nav aria-label="Shop pagination" class="mt-3">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="bi bi-chevron-left"></i></a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="bi bi-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="subscribe-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <img src="assets/img/illustrations/newsletter-dino.png" alt="Subscribe"
+                            style="max-width:100%;max-height:220px;">
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Nhận Khuyến Mãi 20% Khi Thanh Toán Lần Đầu Tiên</h3>
+                        <p>Đăng ký &amp; Đăng nhập ngay để làm thành viên.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <form class="subscribe-form">
+                            <input type="email" class="form-control" placeholder="Địa chỉ Email" required>
+                            <button type="submit" class="btn btn-green">Đăng ký ngay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo"><i class=""></i><span class="fl-green">Cà</span><span
+                            class="fl-orange">Lem</span></a>
+                    <p class="footer-about">Thưởng thức vị kem thơm ngon mát lạnh ngay tại nhà — chuẩn vị tự nhiên, trọn
+                        vẹn từng
+                        khoảnh khắc ngọt ngào."</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Liên Kết Nhanh</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="contact.html">Về chúng tôi</a></li>
+                        <li><a href="shop.html">Khuyến mãi</a></li>
+                        <li><a href="shop.html">Dịch vụ</a></li>
+                        <li><a href="contact.html">Thông tin liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Về Chúng Tôi</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="contact.html">Quy trình đặt hàng</a></li>
+                        <li><a href="shop.html">Set quà tặng</a></li>
+                        <li><a href="shop.html">Chương trình ưu đãi</a></li>
+                        <li><a href="contact.html">Giới thiệu bạn bè</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-heading">Trung Tâm Hỗ Trợ</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="checkout.html">Phương thức thanh toán</a></li>
+                        <li><a href="checkout.html">Chính sách giao hàng</a></li>
+                        <li><a href="shop.html">Chính sách đổi trả</a></li>
+                        <li><a href="contact.html">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 footer-newsletter">
+                    <h6 class="footer-heading">Nhận bản tin ưu đãi</h6>
+                    <p>Đăng ký để cập nhật những ưu đãi hấp dẫn và vị kem mới nhất</p>
+                    <form class="input-group">
+                        <input type="email" class="form-control" placeholder="Nhập Email">
+                        <button class="btn" type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+                <span>&copy; 2026 Cà Lem. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
