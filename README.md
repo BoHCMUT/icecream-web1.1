@@ -21,9 +21,9 @@
 
 - [x] Chức năng đăng nhập & đăng xuất (sử dụng URL khác với người dùng bình thường)
 - [x] Quản lý user (thêm#đăng ký, sửa, khoá/ mở user)  -  giao diện cho người quản trị web
-- [ ] Thêm sản phẩm: đúng phân loại - có upload hình (có hiển thị hình ảnh trước khi thêm)
-- [ ] Sửa sản phẩm: hiển thị đúng thông tin trước khi sửa (đặc biệt là phân loại và hình)
-- [ ] Xoá sản phẩm: kiểm tra nếu sản phẩm đã được bán ra thì ẩn sản phẩm hiển thị trên web, nếu sản phẩm chưa được bán ra thì hỏi lại và tiến hành xoá sản phẩm đó.
+- [x] Thêm sản phẩm: đúng phân loại - có upload hình (có hiển thị hình ảnh trước khi thêm)
+- [x] Sửa sản phẩm: hiển thị đúng thông tin trước khi sửa (đặc biệt là phân loại và hình)
+- [x] Xoá sản phẩm: kiểm tra nếu sản phẩm đã được bán ra thì ẩn sản phẩm hiển thị trên web, nếu sản phẩm chưa được bán ra thì hỏi lại và tiến hành xoá sản phẩm đó.
 - [ ] Quản lý đơn hàng:
 - [ ] Cập nhật tình trạng đơn hàng ( chưa xác nhận, đã xác nhận, đã giao (thành công/huỷ đơn). Trạng thái sản phẩm chỉ có thể cập nhật xuôi, không cho phép cập nhật ngược.
 - [ ] Lọc đơn hàng theo: tình trạng đơn hàng / theo khoảng thời gian đặt hàng (từ ngày đến ngày) / theo địa điểm giao hàng (gợi ý : theo quận, huyện, thành phố )
