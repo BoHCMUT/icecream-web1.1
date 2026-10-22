@@ -6,9 +6,9 @@
 
 - [x] Hiển thị sản phẩm theo phân loại
 - [x] Hiển thị chi tiết sản phẩm
-- [ ] Tìm kiếm cơ bản theo tên sản phẩm (tìm tương đối)
-- [ ] Tìm kiếm nâng cao (kết hợp nhiều điều kiện trong 1 lần tìm kiếm): theo tên sản phẩm, có chọn phân loại và khoảng giá
-- [ ] Hiển thị sản phẩm theo phân loại và kết quả tìm kiếm dạng phân trang
+- [x] Tìm kiếm cơ bản theo tên sản phẩm (tìm tương đối)
+- [x] Tìm kiếm nâng cao (kết hợp nhiều điều kiện trong 1 lần tìm kiếm): theo tên sản phẩm, có chọn phân loại và khoảng giá
+- [x] Hiển thị sản phẩm theo phân loại và kết quả tìm kiếm dạng phân trang
 - [x] Đăng ký làm người mua hàng (giao diện trên người dùng đầu cuối)
 - [x] Bán hàng phải có giỏ hàng: (tham khảo các web bán hàng trực tuyến)
 - [ ] Yêu cầu phải đăng nhập và tự hiển thị thông tin người đăng nhập
@@ -23,8 +23,8 @@
 - [x] Quản lý user (thêm#đăng ký, sửa, khoá/ mở user)  -  giao diện cho người quản trị web
 - [x] Thêm sản phẩm: đúng phân loại - có upload hình (có hiển thị hình ảnh trước khi thêm)
 - [x] Sửa sản phẩm: hiển thị đúng thông tin trước khi sửa (đặc biệt là phân loại và hình)
-- [x] Xoá sản phẩm: kiểm tra nếu sản phẩm đã được bán ra thì ẩn sản phẩm hiển thị trên web, nếu sản phẩm chưa được bán ra thì hỏi lại và tiến hành xoá sản phẩm đó.
-- [ ] Quản lý đơn hàng:
+- [ ] Xoá sản phẩm: kiểm tra nếu sản phẩm đã được bán ra thì ẩn sản phẩm hiển thị trên web, nếu sản phẩm chưa được bán ra thì hỏi lại và tiến hành xoá sản phẩm đó.
+Quản lý đơn hàng:
 - [ ] Cập nhật tình trạng đơn hàng ( chưa xác nhận, đã xác nhận, đã giao (thành công/huỷ đơn). Trạng thái sản phẩm chỉ có thể cập nhật xuôi, không cho phép cập nhật ngược.
 - [ ] Lọc đơn hàng theo: tình trạng đơn hàng / theo khoảng thời gian đặt hàng (từ ngày đến ngày) / theo địa điểm giao hàng (gợi ý : theo quận, huyện, thành phố )
 - [ ] Thống kê: cho phép người quản trị nhập khoảng thời gian thống kê 5 khách hàng có mức mua hàng cao nhất trong thời gian trên, liệt kê từng đơn hàng (có link cho xem chi tiết) và  tính tổng mua. Dữ liệu được sắp xếp giảm dần theo tổng tiền mua.
