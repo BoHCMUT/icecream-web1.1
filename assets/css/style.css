@@ -434,8 +434,6 @@ img {
 }
 
 .product-thumb img {
-  max-width: 78%;
-  max-height: 78%;
   object-fit: contain;
   transition: transform .35s ease;
 }
