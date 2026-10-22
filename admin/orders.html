@@ -1257,15 +1257,6 @@
                                 >
                                   <i class="bi bi-pencil" aria-hidden="true"> </i>
                                 </button>
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-danger"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#modal-delete-user"
-                                  aria-label="Delete Alexander Pierce"
-                                >
-                                  <i class="bi bi-trash" aria-hidden="true"> </i>
-                                </button>
                               </div>
                             </td>
                           </tr>
@@ -1312,121 +1303,6 @@
             </div>
             <!--end::Row-->
 
-            <!--begin::Add User Modal-->
-            <div
-              class="modal fade"
-              id="modal-add-user"
-              tabindex="-1"
-              aria-labelledby="modal-add-user-label"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <form>
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modal-add-user-label">Add new product</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                    <div class="input-group mb-3">
-                        <input
-                          type="file"
-                          class="form-control"
-                          id="inputGroupFile02"
-                          required
-                        />
-                        <label class="input-group-text" for="inputGroupFile02">Upload Image</label>
-                    </div>
-                      <div class="mb-3">
-                        <label for="new-user-name" class="form-label"> Name </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-name"
-                          placeholder="e.g. Kem matcha"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Price (VND) </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="20000"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Volume (gram) </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="300"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Ingredients </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="e.g. Vani, dâu, chocolate"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Storage </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="e.g. Bảo quản đông lạnh theo hướng dẫn của nhà sản xuất"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Shelf Live </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="e.g. 3 ngày, 5-7 ngày"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-role" class="form-label"> Type </label>
-                        <select id="new-user-role" class="form-select">
-                          <option selected>Kem hộp</option>
-                          <option>Kem viên</option>
-                          <option>Kem que</option>
-                          <option>Kem ốc quế</option>
-                          <option>Kem trái cây</option>
-                          <option>Bánh kem lạnh</option>
-                          <option>Topping</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cancel
-                      </button>
-                      <button type="submit" class="btn btn-primary">Create product</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!--end::Add User Modal-->
-
             <!--begin::Edit Product Modal-->
             <div
               class="modal fade"
@@ -1439,7 +1315,7 @@
                 <div class="modal-content">
                   <form>
                     <div class="modal-header">
-                      <h5 class="modal-title" id="modal-add-user-label">Edit product</h5>
+                      <h5 class="modal-title" id="modal-add-user-label">Update status</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -1448,102 +1324,26 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      <div class="mb-3">
-                        <p>Current: mochi.png</p>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio-1" disabled>
+                        <label class="form-check-label" for="radio-1">Pending</label>
                       </div>
-                      <div class="input-group mb-3">
-                        <input
-                          type="file"
-                          class="form-control"
-                          id="inputGroupFile02"
-                          required
-                        />
-                        <label class="input-group-text" for="inputGroupFile02">Upload Image</label>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio-1" disabled>
+                        <label class="form-check-label" for="radio-1">Processing</label>
                       </div>
-                      <div class="mb-3">
-                        <label for="new-user-name" class="form-label"> Name </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-name"
-                          placeholder="e.g. Kem matcha"
-                          value="Kem mochi"
-                          required
-                        />
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio-1" disabled>
+                        <label class="form-check-label" for="radio-1">Shipped</label>
                       </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Price (VND) </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="20000"
-                          value="10000"
-                          required
-                        />
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio-1" checked="">
+                        <label class="form-check-label" for="radio-1">Delivered</label>
                       </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Volume (gram) </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="300"
-                          value="300"
-                          required
-                        />
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="radioGroup" id="radio-1">
+                        <label class="form-check-label" for="radio-1">Cancelled</label>
                       </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Ingredients </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="e.g. Vani, dâu, chocolate"
-                          value="Mochi, kem, đường cát"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Storage </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="e.g. Bảo quản đông lạnh theo hướng dẫn của nhà sản xuất"
-                          value="Bảo quản đông lạnh theo hướng dẫn của nhà sản xuất"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-email" class="form-label"> Shelf Live </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="new-user-email"
-                          placeholder="e.g. 3 ngày, 5-7 ngày"
-                          value="5-7 ngày"
-                          required
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="new-user-role" class="form-label"> Type </label>
-                        <select id="new-user-role" class="form-select">
-                          <option>Kem hộp</option>
-                          <option selected>Kem viên</option>
-                          <option>Kem que</option>
-                          <option>Kem ốc quế</option>
-                          <option>Kem trái cây</option>
-                          <option>Bánh kem lạnh</option>
-                          <option>Topping</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cancel
-                      </button>
-                      <button type="submit" class="btn btn-primary">Edit product</button>
                     </div>
                   </form>
                 </div>
