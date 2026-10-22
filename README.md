@@ -27,6 +27,6 @@
 
 Quản lý đơn hàng:
 
-- [ ] Cập nhật tình trạng đơn hàng ( chưa xác nhận, đã xác nhận, đã giao (thành công/huỷ đơn). Trạng thái sản phẩm chỉ có thể cập nhật xuôi, không cho phép cập nhật ngược.
-- [ ] Lọc đơn hàng theo: tình trạng đơn hàng / theo khoảng thời gian đặt hàng (từ ngày đến ngày) / theo địa điểm giao hàng (gợi ý : theo quận, huyện, thành phố )
+- [x] Cập nhật tình trạng đơn hàng ( chưa xác nhận, đã xác nhận, đã giao (thành công/huỷ đơn). Trạng thái sản phẩm chỉ có thể cập nhật xuôi, không cho phép cập nhật ngược.
+- [x] Lọc đơn hàng theo: tình trạng đơn hàng / theo khoảng thời gian đặt hàng (từ ngày đến ngày) / theo địa điểm giao hàng (gợi ý : theo quận, huyện, thành phố )
 - [ ] Thống kê: cho phép người quản trị nhập khoảng thời gian thống kê 5 khách hàng có mức mua hàng cao nhất trong thời gian trên, liệt kê từng đơn hàng (có link cho xem chi tiết) và  tính tổng mua. Dữ liệu được sắp xếp giảm dần theo tổng tiền mua.
