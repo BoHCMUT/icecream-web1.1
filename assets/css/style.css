@@ -1414,7 +1414,7 @@ img {
 }
 
 .contact-info-block p,
-.contact-info-block a {
+.footer-contact a {
   font-size: .87rem;
   color: var(--gc-text);
   display: block;
